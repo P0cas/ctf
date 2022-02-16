@@ -1,0 +1,56 @@
+<!-- https://github.com/seungyeop-lee/tetris
+ -->
+<% 
+  css = ['tetris.css'] 
+  js = ['game/tetrominoes.js', 'game/piece.js', 'game/tetris.js', 'index.js'] 
+%>
+<%- include('./component/header') %>
+<%- include('./component/navbar', { cookie }) %>
+
+  <section id="start-screen">
+    <div id="start-div">
+      <h2>Tetris</h2>
+      <p><button id="playBtn">Click to Play.</button></p>
+      <pre>
+a, d: move block
+w: rotate block
+s: soft drop
+c: hard drop
+p: save game
+l: load game
+
+On a smartphone, 
+a button is displayed.
+      </pre>
+    </div>
+  </section>
+  <section id="outer-game-screen" style="display: none;">
+    <section id="inner-game-screen">
+      <div id="tetris-display"></div>
+      <div id="tetris-info">
+        <div id="next-block-info">
+          <p style="margin-top: 0;">Next Block</p>
+        </div>
+        <div id="game-info">
+          <p class="info-label">SCORE</p>
+          <p class="info-value" id="game-info-score">0</p>
+          <p class="info-label">Game Speed</p>
+          <p class="info-value" id="game-speed"></p>
+        </div>
+      </div>
+    </section>
+    <button id="leftMove" onclick="cGameInfo.cPiece.moveLeft();"></button>
+    <button id="rotate" onclick="cGameInfo.cPiece.rotate();"></button>
+    <button id="rightMove" onclick="cGameInfo.cPiece.moveRight();"></button>
+    <button id="hardDrop" onclick="cGameInfo.cPiece.moveEndDown();"></button>
+  </section>
+  <section id="game-over-screen" style="display: none;">
+    <div id="game-over-div">
+      <h2>GameOver!!!</h2>
+      <p id="game-over-score">SCORE: 0</p>
+      <p><button onclick="restartGame();">Restart</button></p>
+      <p><button onclick="goStartUp();">Start-up Screen</button></p>
+    </div>
+  </section>
+
+<%- include('./component/footer') %>

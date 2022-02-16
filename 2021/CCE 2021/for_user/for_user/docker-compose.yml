@@ -1,0 +1,19 @@
+version: '3'
+
+networks:
+  app-tier:
+    driver: bridge
+services:
+  prob:
+    build: ./docker/
+    ports:
+      - "4423:80"
+    networks:
+      - app-tier
+  
+  robots:
+    networks:
+    - app-tier
+    build: ./robot/
+    ports:
+      - "3000:80"

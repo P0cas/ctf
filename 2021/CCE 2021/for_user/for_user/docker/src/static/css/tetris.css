@@ -1,0 +1,138 @@
+/* https://github.com/seungyeop-lee/tetris */
+html, body {
+  height: 100%;
+}
+
+body {
+margin: 0 auto;
+}
+
+section {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+width: 100%;
+}
+
+#start-div {
+text-align: center;
+}
+
+#outer-game-screen {
+z-index: 1;
+}
+
+#inner-game-screen {
+display: flex;
+justify-content: center;
+align-items: flex-start;
+height: 500px;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+#tetris-display, #tetris-info {
+display: inline-block;
+}
+
+#tetris-panel {
+border: 1px solid black;
+border-collapse: collapse;
+height: 500px;
+width: 250px;
+}
+
+#tetris-panel tr td {
+border: 1px solid black;
+}
+
+#tetris-info {
+margin-left: 10px;
+width: 70px;
+}
+
+#tetris-info p {
+font-size: 10px;
+text-align: center;
+}
+
+#tetris-info p.info-value {
+font-weight: bolder;
+}
+
+#next-block-info {
+margin-bottom: 10px;
+}
+
+#next-block {
+border: 1px solid black;
+border-collapse: collapse;
+width: 70px;
+height: 70px;
+}
+
+#game-info {
+padding-top: 10px;
+padding-bottom: 10px;
+border: 1px solid black;
+}
+
+#outer-game-screen button {
+border: 1px dashed gray;
+background-color: rgba(30, 30, 30, 0.1);
+touch-action: manipulation;
+}
+
+#leftMove {
+position: absolute;
+top: 0%;
+left: 0%;
+width: 20%;
+height: 100%;
+z-index: 2;
+}
+
+#rightMove {
+position: absolute;
+top: 0%;
+right: 0%;
+width: 20%;
+height: 100%;
+z-index: 2;
+}
+
+#rotate {
+position: absolute;
+top: 30%;
+left: 20%;
+width: 60%;
+height: 40%;
+z-index: 2;
+}
+
+#hardDrop {
+position: absolute;
+bottom: 0%;
+left: 20%;
+width: 60%;
+height: 30%;
+z-index: 2;
+}
+
+#game-over-screen {
+position: absolute;
+top: 0%;
+left: 0%;
+z-index: 3;
+}
+
+#start-div, #game-over-div {
+padding: 25px 25px;
+border: 1px dashed black;
+background-color: white;
+}
+
+#game-over-div p {
+text-align: center;
+}

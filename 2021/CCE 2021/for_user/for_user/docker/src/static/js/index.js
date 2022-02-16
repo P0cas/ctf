@@ -1,0 +1,1 @@
+$('#playBtn').click(startPlay)
