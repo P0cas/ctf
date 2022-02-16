@@ -1,4 +1,4 @@
-<img src="https://github.com/P0cas/Storage/blob/main/write%20up/ctf/2022/Hayyim%20CTF%202022/hayyim%20CTF%202022.png?raw=true" style="width: 100%;
+<img src="https://github.com/P0cas/ctf/blob/main/2022/Hayyim%20CTF%202022/hayyim%20CTF%202022.png?raw=true" style="width: 100%;
         max-width: 100%;
         height: auto;">
 
