@@ -1,4 +1,4 @@
-# CTF
+# CTF - Write Up
 
 ### 2022
 
