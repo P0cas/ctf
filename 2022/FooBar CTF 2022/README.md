@@ -150,7 +150,7 @@ connection: close
 GLUG{n0w_1_kn0w_wh0_4r3_y0u_1FOXABB6GM}
 ```
 
-```
+```plaintext
 FLAG : GLUG{n0w_1_kn0w_wh0_4r3_y0u_1FOXABB6GM}
 ```
 
