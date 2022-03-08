@@ -2,6 +2,7 @@
 
 ### 2022
 
+- [FooBar CTF 2022](https://github.com/P0cas/ctf/tree/main/2022/FooBar%20CTF%202022)
 - [Codegate 2022](https://github.com/P0cas/ctf/tree/main/2022/CodeGate%202022)
 - [Hayyim CTF 2022](https://github.com/P0cas/ctf/tree/main/2022/Hayyim%20CTF%202022)
 - [Real World CTF 4th](https://github.com/P0cas/ctf/tree/main/2022/Real%20World%20CTF%204th)
