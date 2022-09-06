@@ -1,3 +1,5 @@
+<img src="https://cdn.codeground.org/nsr/images/meta/1_SSTF.png" style=" width: 100%; max-width: 100%; height: auto;">
+
 I participated in the CTF called sstf after 5 months. Today, I wrote that how to solve a JWT Decoder.
 
 ```zsh
