@@ -2,6 +2,8 @@
 
 ### 2022
 
+- [SSTF 2022](https://github.com/P0cas/ctf/tree/main/2022/SSTF%202022)
+- [Line CTF 2022](https://github.com/P0cas/ctf/tree/main/2022/Line%20CTF%202022)
 - [Spring GoN Open Qual CTF 2022](https://github.com/P0cas/ctf/tree/main/2022/GoN%20CTF%202022)
 - [FooBar CTF 2022](https://github.com/P0cas/ctf/tree/main/2022/FooBar%20CTF%202022)
 - [Codegate 2022](https://github.com/P0cas/ctf/tree/main/2022/CodeGate%202022)
