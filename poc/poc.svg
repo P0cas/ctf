@@ -3,7 +3,7 @@
 
 <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
    <polygon id="triangle" points="0,0 0,50 50,0" fill="#009900" stroke="#004400"/>
-   <script type="text/javascript">
+   <script type="text/javascript" src="blob:https://mail.proton.me/e3a89803-bc01-4494-b2c3-2dc8356ba42f">
       alert('xss');
    </script>
 </svg>
